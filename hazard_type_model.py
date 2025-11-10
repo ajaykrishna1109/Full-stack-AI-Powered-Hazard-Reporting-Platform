@@ -35,4 +35,16 @@ def predict_hazard_type(description):
     # Decode the predicted label
     return label_mapping[predicted_label]
 
-# Remove the test block completely
+# Example hazard descriptions
+test_descriptions = [
+    "there are lot of pothole due to rain, continuous construction and movement of heavy vehicles. the road is a danger for people who travel here",
+    "Garbage is piling up on the side of the street.",
+    "The drainage system is leaking and flooding the area.",
+    "The road surface is cracked and uneven, posing a danger to drivers.",
+    "Trash is overflowing from the garbage bins near the park."
+]
+
+# Make predictions for each example
+for description in test_descriptions:
+    predicted_hazard = predict_hazard_type(description)
+    print(f"Description: '{description}' \nPredicted Hazard Type: {predicted_hazard}\n")
