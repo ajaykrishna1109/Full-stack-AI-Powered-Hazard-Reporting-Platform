@@ -1,0 +1,1 @@
+# Full-stack-AI-Powered-Hazard-Reporting-Platform
